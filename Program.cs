@@ -129,41 +129,31 @@ Console.Clear();
 // что третьей цифры нет
 
 
-// int num1 = int.Parse(Console.ReadLine());
+Console.Write("Введите трехзначное число: "); 
+string num = Console.ReadLine ();
+int num1=int.Parse (num);
+if (99<num1 ){
 
-// if (num1 ){
-//   int num2=num1/10;
-//   int num3=num2%10;
-//   Console.WriteLine($"Третья цифра в числе {num1} равна {num3}"); 
-// }
-// else { Console.WriteLine($"Третьей цифры в числе {num1} нет! "); 
-// }
-
-// Console.Write("Введите трехзначное число: "); 
-// string num = Console.ReadLine ();
-// int num1=int.Parse (num);
-// if (99<num1 ){
-
-// string otvet2 = Convert.ToString(num [2]);
-// Console.WriteLine($"Третья цифра: {otvet2}");}
-// else { Console.WriteLine($"Третьей цифры в числе {num} нет! "); 
-// }
+string otvet2 = Convert.ToString(num [2]);
+Console.WriteLine($"Третья цифра: {otvet2}");}
+else { Console.WriteLine($"Третьей цифры в числе {num} нет! "); 
+}
 
 
 // Задача 15: Напишите программу которая на вход принимает цифру,
 // обозначающую день недели и проверяет, является ли этот день выходным
 
 
-Console.Clear();
-Console.Write("Введите номер дня недели: ");
-int numberdayofweek = int.Parse(Console.ReadLine());
-if (numberdayofweek<1 || numberdayofweek>7)
-{
-  Console.WriteLine("Введен неправильный номер");
-return;}
-if (numberdayofweek==6 || numberdayofweek==7){
+// Console.Clear();
+// Console.Write("Введите номер дня недели: ");
+// int numberdayofweek = int.Parse(Console.ReadLine());
+// if (numberdayofweek<1 || numberdayofweek>7)
+// {
+//   Console.WriteLine("Введен неправильный номер");
+// return;}
+// if (numberdayofweek==6 || numberdayofweek==7){
 
-  Console.WriteLine("Этот день выходной");}
-else {Console.WriteLine("Этот день не является выходным");}
+//   Console.WriteLine("Этот день выходной");}
+// else {Console.WriteLine("Этот день не является выходным");}
 
   
